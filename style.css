@@ -262,11 +262,8 @@ input[type="checkbox"]:checked + label {
   color: #cbd5e1;
   font-size: 14px;
 }
-.Resume {
-  padding: 40px 10%;
-}
 
-.resume-card {
+.Resume{
   background: #1E293B;
   padding: 16px;
   border-radius: 12px;
@@ -274,7 +271,7 @@ input[type="checkbox"]:checked + label {
   border: 1px solid #334155;
 }
 
-.resume-card button {
+#resumeBtn{
   margin-top: 10px;
   padding: 10px 14px;
   background: #33C3F0;
@@ -284,7 +281,7 @@ input[type="checkbox"]:checked + label {
   font-weight: bold;
 }
 
-.resume-card button:hover {
+#resumeBtn:hover {
   background: #22b0dd;
 }
 
@@ -293,7 +290,7 @@ input[type="checkbox"]:checked + label {
         padding: 0 15px;
     }
     .nav-container {
-        display: flex;
+        display: none;
         gap: 5px;
     }
     .btn {
@@ -318,12 +315,15 @@ input[type="checkbox"]:checked + label {
     .Tasks, .Coding-Progress, .Notes, .Resume {
         padding: 20px 5%;
     }
+    .side-bar{
+        padding: 20px; 
+    }
 }
 
 .footer-section{
   background-color: #00000099;
   padding: 48px 16px;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   flex-direction: column;
   text-align: center;
@@ -343,7 +343,7 @@ input[type="checkbox"]:checked + label {
   height:100vh;
   background:#1E293B;
   color:white;
-  padding:20px;
+  padding:20px; 
   transition:0.3s;
   z-index:1000;
 }
@@ -352,7 +352,7 @@ input[type="checkbox"]:checked + label {
   left:0;
 }
 .sidebar-end{
-  margin-top:80vh; 
+  margin-top :72vh; 
   display:flex;
   flex-direction:column;
   justify-content:flex-end;

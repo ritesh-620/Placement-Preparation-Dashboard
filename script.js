@@ -1,17 +1,26 @@
-function login() {
-  let user = document.getElementById("user").value;
-  let pass = document.getElementById("pass").value;
+document.getElementById("loginForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const user = document.getElementById("user").value.trim();
+  const pass = document.getElementById("pass").value.trim();
 
-  if(user == "Ritesh@62" && pass=="62095") {
-    window.location.href = "home.html";
-  } else {
-    alert("Wrong user or password. Please try again.");
+  if(!user || ! pass){
+    alert("Please fill in both fields.");
+    return;
   }
-}
 
-function Guest() {
-  window.location.href = "home.html";
-}
-function forgetPassword() {
-  alert("Please contact the administrator to reset your password.");
-}
+  if(user == "Ritesh@62" && pass == "62095"){
+    alert("Login Successful");
+    window.location.href = "Profile.html";
+  }else{
+    alert("Invalid credentials.");
+  }
+});
+
+document.getElementById("forgetLink").addEventListener("click",function(e){
+  e.preventDefault();
+  alert("password reset flow goes here.")
+});
+
+
+
+

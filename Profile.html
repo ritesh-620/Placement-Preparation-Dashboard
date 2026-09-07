@@ -71,7 +71,7 @@
         </div>
    </section>
 
-    <div class="Tasks" id="Tasks">
+    <section class="Tasks" id="Tasks">
 
         <h2>Daily Focus Tasks</h2>
 
@@ -95,9 +95,9 @@
             <label for="t4">Update Resume / Projects</label>
         </div>
 
-    </div>
+    </section>
 
-    <div class="Progress" id="Progress">
+    <section class="Progress" id="Progress">
         <h2>📈 Coding Progress</h2>
         <div class="Coding-Progress">
            <div class="Java">
@@ -126,18 +126,18 @@
                 <div class="Progress-bar">10%</div>
             </div>
         </div>
-    </div>
+    </section>
     
-    <div class="Notes" id="Notes">
+    <section class="Notes" id="Notes">
         <h2>📝 Notes</h2>
 
         <div class="note-card">Binary Search → 2 patterns revise</div>
         <div class="note-card">DP → Knapsack + LIS focus</div>
         <div class="note-card">Resume → Add project screenshots</div>
         <div class="note-card">Mock Interview → Improve time complexity answers</div>
-    </div>
+    </section>
 
-    <div class="resume-card" id="Resume">
+    <section class="Resume" id="Resume">
         <p>Profile Completion: <b>80%</b></p>
         <p id="resume-status">No resume uploaded</p>
 
@@ -146,7 +146,7 @@
         <button id="resumeBtn" onclick="handleResumeClick()">
             Upload Resume
         </button>
-    </div>
+    </section>
 
     <footer class="footer-section">
         <div class="foot-sec1">
@@ -157,27 +157,37 @@
             <a><i class="fa-brands fa-linkedin"></i></a>
             <a><i class="fa-brands fa-github"></i></a>
         </div>
-    <div class="foot-sec3">
-        <p>@ 2026 Ritesh Kumar Ray</p>
-        <p>B.Tech Student & Aspiring Software Developer</p>
-    </div>
+        <div class="foot-sec3">
+            <p>@ 2026 Ritesh Kumar Ray</p>
+            <p>B.Tech Student & Aspiring Software Developer</p>
+        </div>
     </footer>
 
-    <div id="sidebar" class="sidebar">
+    <section id="sidebar" class="sidebar">
         <div class="profile">
             <i class="fa-solid fa-circle-user"></i>
         </div>
         <h3>Ritesh Kumar Ray</h3>
+         <div class="top-section">
+            Profile
+            Settings
+         </div>
+
+        <div class="middle-section">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+        </div>
         <div class="sidebar-end">
             <button  class="logout" onclick="logout()">
                 Logout
                 <i class="fa-solid fa-right-from-bracket"></i>
             </button>
         </div>
+    </section>
 
-    </div>
-
-  <div id="overlay" onclick="closeSidebar()"></div>
+  <section id="overlay" onclick="closeSidebar()"></section>
   <script src="app.js"></script>
 </body>
 </html>
