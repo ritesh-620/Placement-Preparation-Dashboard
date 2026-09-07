@@ -43,19 +43,18 @@ button {
     color: white;
   
 }
-
-.open-btn {
-    background: #2196F3;
+#register-btn{
+    background: #9face6;
     color: white;
-}  
-
+}
 button:hover{
     opacity:0.9;
-}
-
+}  
+ 
 @media(max-width:400px){
     .box{
       width:90%;
       padding:20px;
     }
 }
+
