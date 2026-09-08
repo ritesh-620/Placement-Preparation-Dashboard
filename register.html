@@ -6,18 +6,20 @@
   <link rel="stylesheet" href="register.css">
 </head>
 <body>
-  <div class="register-container">
-    <h2>Create Account</h2>
-    <form id="registrationForm">
-      <input type="text" id="username" placeholder="Username" required>
-      <input type="email" id="email" placeholder="Email" required>
-      <input type="password" id="password" placeholder="Password" required>
-      <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
-      <button type="submit">Register</button>
-      <!-- Error message placeholder -->
-      <p id="errorMsg" style="color:red; display:none;"></p>
-    </form>
-    <p>Already have an account? <a href="index.html">Back to Login</a></p>
+  <div id="overlay">
+    <div class="register-container">
+      <h2>Create Account</h2>
+      <form id="registrationForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <button type="submit">Register</button>
+        <!-- Error message placeholder -->
+        <p id="errorMsg" style="color:red; display:none;"></p>
+      </form>
+      <p>Already have an account? <a href="profile.html">Back to Login</a></p>
+    </div>
   </div>
   <script src="./registration.js"></script>
 </body>

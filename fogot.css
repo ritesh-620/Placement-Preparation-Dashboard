@@ -9,7 +9,9 @@
 }
 
 .forgot-container {
-  max-width: 350px;
+  width: 40%;
+  min-width: 320px;
+  box-sizing: border-box;
   margin: 80px auto;
   background: #fff;
   padding: 25px;
@@ -43,4 +45,12 @@
 
 .forgot-container button:hover {
   background: #e68900;
+}
+
+@media(max-width: 400px){
+   .forgot-container{
+    width: 90%;
+    min-width: 0;
+    padding: 20px;
+   }
 }

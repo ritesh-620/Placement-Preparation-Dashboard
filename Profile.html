@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PrepTrack</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -176,7 +177,7 @@
         <div class="middle-section">
             <a href="#">Home</a>
             <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#">Contact</a>  
             <a href="#">Login</a>
         </div>
         <div class="sidebar-end">
@@ -186,7 +187,34 @@
             </button>
         </div>
     </section>
+<!-- LOGIN POPUP -->
+<div id="loginOverlay">
 
+    <div class="login-box">
+        <h2>Login</h2>
+        <form id="loginForm">
+
+            <input id="user" type="text" placeholder="Username" required>
+
+            <input id="pass" type="password" placeholder="Password" required>
+
+            <button type="submit">Login</button>
+
+        </form>
+        <p>
+            <a href="#" id="forgot-link" class="forgot-link">
+                Forgot Password?
+            </a>
+        </p>
+        <p>
+            New user?
+            <a href="register.html">
+                Register here
+            </a>
+        </p>
+    </div>
+
+</div>
   <section id="overlay" onclick="closeSidebar()"></section>
   <script src="app.js"></script>
 </body>

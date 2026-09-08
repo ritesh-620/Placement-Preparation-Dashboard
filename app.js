@@ -72,6 +72,11 @@ document.getElementById("resumeUpload").addEventListener("change", function (eve
   }
 });
 
+function openLogin() {
+    document.getElementById("loginOverlay").style.display = "flex";
+}
+
+
 function openSidebar(){
   document.getElementById("sidebar").classList.add("active");
   document.getElementById("overlay").classList.add("active");
@@ -86,3 +91,26 @@ function logout(){
   alert("Logged out");
   window.location.href = "index.html";
 }
+
+document.getElementById("loginForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const user = document.getElementById("user").value.trim();
+  const pass = document.getElementById("pass").value.trim();
+
+  if(!user || ! pass){
+    alert("Please fill in both fields.");
+    return;
+  }
+
+  if(user == "Ritesh@62" && pass == "62095"){
+    document.getElementById("loginOverlay").style.display ="none";
+  }else{
+    alert("Invalid credentials.");
+  }
+});
+
+document.getElementById("forgot-link").addEventListener("click",function(e){
+  e.preventDefault();
+  alert("password reset flow goes here.")
+  window.location.href="forgot.html";
+});
