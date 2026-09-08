@@ -12,17 +12,19 @@
 <body>
     <div id="overlay">
         <div class="login-box">
-        <h2>Login</h2>
-        <form>
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
-        <p>New user? <a href="register.html">Register here</a></p>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input id="user" type="text" placeholder="Username" required>
+                <input id="pass" type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p><a href="#" id="forgetLink" class="forgot-link">Forgot Password?</a></p>
+
+            <p>New user? <a href="register.html">Register here</a></p>
         </div>
     </div>
 
     <script src="./script.js"></script>
 
 </body>
-</html>
+</html>  

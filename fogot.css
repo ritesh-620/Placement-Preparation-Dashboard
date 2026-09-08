@@ -1,0 +1,46 @@
+.forgot-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.forgot-container {
+  max-width: 350px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.forgot-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.forgot-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.forgot-container button {
+  width: 95%;
+  padding: 10px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.forgot-container button:hover {
+  background: #e68900;
+}

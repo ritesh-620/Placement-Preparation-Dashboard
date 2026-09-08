@@ -19,10 +19,5 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
 document.getElementById("forgetLink").addEventListener("click",function(e){
   e.preventDefault();
   alert("password reset flow goes here.")
+  window.location.href="forgot.html";
 });
-
-
-
-
-
-

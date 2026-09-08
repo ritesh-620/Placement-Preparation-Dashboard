@@ -8,14 +8,18 @@
 <body>
   <div class="register-container">
     <h2>Create Account</h2>
-    <form>
-      <input type="text" placeholder="Username" required>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <input type="password" placeholder="Confirm Password" required>
+    <form id="registrationForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
       <button type="submit">Register</button>
+      <!-- Error message placeholder -->
+      <p id="errorMsg" style="color:red; display:none;"></p>
     </form>
     <p>Already have an account? <a href="index.html">Back to Login</a></p>
   </div>
+  <script src="./registration.js"></script>
 </body>
 </html>
+
